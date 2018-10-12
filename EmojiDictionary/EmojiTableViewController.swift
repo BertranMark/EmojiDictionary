@@ -29,6 +29,17 @@ class EmojiTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          navigationItem.leftBarButtonItem = editButtonItem
+        let a: Character = "😀"
+        let b: Character = "😃"
+        let c: Character = "㉿"
+        if (b <= c) && (b >= a) {
+            print("в диапазоне")
+        }
+       else
+        {
+            print("Не входит")
+        }
+        
     }
 
     // MARK: - Table view data source
@@ -102,16 +113,36 @@ class EmojiTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "EditEmoji" {
+            let indexPath = tableView.indexPathForSelectedRow!
+            let emoji = emojis[indexPath.row]
+            let nav = segue.destination as! UINavigationController
+            let addEmojiTableViewController = nav.topViewController as! AddEditEmojiTableViewController
+            addEmojiTableViewController.emoji = emoji
+            addEmojiTableViewController.navigationItem.title = "Edit"
+        }
     }
-    */
-    
+   
+    @IBAction func unwind(segeue: UIStoryboardSegue) {
+        guard segeue.identifier == "SaveUnwind" else { return }
+        let source = segeue.source as! AddEditEmojiTableViewController
+        let emoji = source.emoji
+        if let select = tableView.indexPathForSelectedRow {
+            emojis[select.row] = emoji
+            tableView.reloadRows(at: [select], with: .fade)
+        } else {
+            let newIndexPath = IndexPath(row: emojis.count, section: 0)
+            emojis.append(emoji)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
     // MARK: UITableViewDelegate
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let emoji = emojis[indexPath.row]

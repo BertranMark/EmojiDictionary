@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6F6AD02170C15500698E3C /* CheckEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F6ACF2170C15500698E3C /* CheckEmoji.swift */; };
+		1E900754216FC249001E558C /* AddEditEmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E900753216FC249001E558C /* AddEditEmojiTableViewController.swift */; };
 		691C6A8A216BE06D00FF8B99 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C6A89216BE06D00FF8B99 /* EmojiTableViewCell.swift */; };
 		69484699216BC82000645256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69484698216BC82000645256 /* AppDelegate.swift */; };
 		6948469E216BC82000645256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6948469C216BC82000645256 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E6F6ACF2170C15500698E3C /* CheckEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmoji.swift; sourceTree = "<group>"; };
+		1E900753216FC249001E558C /* AddEditEmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEmojiTableViewController.swift; sourceTree = "<group>"; };
 		691C6A89216BE06D00FF8B99 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
 		69484695216BC81F00645256 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69484698216BC82000645256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			children = (
 				69484698216BC82000645256 /* AppDelegate.swift */,
 				6948469C216BC82000645256 /* Main.storyboard */,
+				1E900753216FC249001E558C /* AddEditEmojiTableViewController.swift */,
+				1E6F6ACF2170C15500698E3C /* CheckEmoji.swift */,
 				694846AC216BCA9200645256 /* EmojiTableViewController.swift */,
 				691C6A89216BE06D00FF8B99 /* EmojiTableViewCell.swift */,
 				6948469F216BC82900645256 /* Assets.xcassets */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E900754216FC249001E558C /* AddEditEmojiTableViewController.swift in Sources */,
 				694846AB216BC8BF00645256 /* Emoji.swift in Sources */,
 				694846AD216BCA9200645256 /* EmojiTableViewController.swift in Sources */,
+				1E6F6AD02170C15500698E3C /* CheckEmoji.swift in Sources */,
 				691C6A8A216BE06D00FF8B99 /* EmojiTableViewCell.swift in Sources */,
 				69484699216BC82000645256 /* AppDelegate.swift in Sources */,
 			);
@@ -291,13 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = RSV8V35E5B;
 				INFOPLIST_FILE = EmojiDictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.learnSwift.EmojiDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = emoji.bertran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,13 +317,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = RSV8V35E5B;
 				INFOPLIST_FILE = EmojiDictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.learnSwift.EmojiDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = emoji.bertran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
